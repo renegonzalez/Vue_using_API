@@ -32,3 +32,16 @@ ul li.selected p{
 .margin-item-30{
     padding: 30px 0px;
 }
+
+.comment p{
+    background-color:transparent;
+    padding: 0 20px;
+}
+.commentBody{
+    padding: 0 0 !important;
+    margin: -15px 20px 20px 30px;
+}
+
+.comment-user{
+    font-weight: bold;
+}

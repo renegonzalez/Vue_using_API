@@ -7,48 +7,12 @@
 
 </head>
 <body>
-	<main role="main" id="root">
-<blogcomponent inline-template>
-<div>
-  <h1 class="text-center">{{ title }} <button class="btn btn-secondary " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Edit</button></h1> 
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-          <div class="col-center">
-              <div class="form-group">
-              <p>You can change the title </p><input type="text" v-model="title" number name="title" id="title"/>
-              </div>
-            </div>
-      </div>
-    </div>
-    
-  <div class="row row-pad-top">
-    <div class="offset-md-2 col-md-8 offset-md-2">
-        <div class="alert alert-dark" role="alert">
-            API Test: The following posts and users are in https://jsonplaceholder.typicode.com/. This test allows to do filters over the authors.
-          </div>
-    <h3>Authors</h3>
-    <button type="button" class="btn btn-secondary margin-btn" @click="loadPosts">All Authors</button>
-    <button type="button" class="btn btn-secondary margin-btn" v-for="user in users" v-if="user" @click="loadUserPosts(user.id)">{{user.username}}</button>
-      <h3 class="margin-item-30">Post List</h3>
-      <ul class="margin-item-30">
-        <li v-for="item in posts" v-if="item">
-          <h4>{{ item.title }}</h4>
-          <p>{{ item.body }}</p>
-          
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</div>
-</blogcomponent>
-</main>
+	<main role="main" id="root"></main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="vue.js"></script>
   <script src=""></script>
   
