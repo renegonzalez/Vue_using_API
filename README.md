@@ -9,3 +9,8 @@ Characteristics:
 Features:
 - This test shows the way to load blog posts and their comments using an API.
 - You can filter by author. 
+
+Advice:
+If you want to use this test, you have to disable security options to avoid CORS problems in Chrome.
+I got it creating a shortcut with the following options:
+"...chrome.exe" --user-data-dir="C:/Chrome dev session" --disable-web-security
